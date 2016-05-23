@@ -5,21 +5,21 @@ var badData = data.bad;
 var goodData = data.good;
 
 var zipCodeUs = is.callback( function ( value ) {
- 	var regexp = new RegExp(/^\d{5}(?:[- ]?\d{4})?$/);
- 	return regexp.test(value);
+  var regexp = new RegExp(/^\d{5}(?:[- ]?\d{4})?$/);
+  return regexp.test(value);
 });
 
 var constraint = {
-		email: is.notBlank(),
-		phone: is.notBlank(),
-		first_name: [ is.ofLength( { min: 4, max: 25 } ) ],
-		last_name: is.notBlank(),
-		address: is.notBlank(),
-		zip: [is.notBlank(), zipCodeUs],
-		dob_month: is.notBlank(),
-		dob_year: is.notBlank(),
-		city: is.notBlank(),
-		state: is.notBlank()
+  email: is.notBlank(),
+  phone: is.notBlank(),
+  first_name: [ is.ofLength( { min: 4, max: 25 } ) ],
+  last_name: is.notBlank(),
+  address: is.notBlank(),
+  zip: [is.notBlank(), zipCodeUs],
+  dob_month: is.notBlank(),
+  dob_year: is.notBlank(),
+  city: is.notBlank(),
+  state: is.notBlank()
 };
 
 
