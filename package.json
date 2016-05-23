@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/MxMcG/validate-test/issues"
   },
-  "homepage": "https://github.com/MxMcG/validate-test#readme"
+  "homepage": "https://github.com/MxMcG/validate-test#readme",
+  "dependencies": {
+    "validate.js": "^0.10.0"
+  }
 }
